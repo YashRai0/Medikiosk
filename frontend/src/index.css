@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .kiosk-card {
+    @apply bg-white rounded-2xl border border-slate-200 shadow-sm;
+  }
+  .touch-target {
+    @apply min-h-[48px] min-w-[48px];
+  }
+}

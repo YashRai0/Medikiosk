@@ -1,0 +1,20 @@
+import { Router } from 'express';
+import sessionRoutes from './sessionRoutes';
+import conversationRoutes from './conversationRoutes';
+import asrRoutes from './asrRoutes';
+import ocrRoutes from './ocrRoutes';
+import summaryRoutes from './summaryRoutes';
+import physicianRoutes from './physicianRoutes';
+import fhirRoutes from './fhirRoutes';
+import ayushRoutes from './ayushRoutes';
+
+const router = Router();
+router.use('/sessions', sessionRoutes);
+router.use('/conversation', conversationRoutes);
+router.use('/asr', asrRoutes);
+router.use('/ocr', ocrRoutes);
+router.use('/summary', summaryRoutes);
+router.use('/physician', physicianRoutes);
+router.use('/fhir', fhirRoutes);
+router.use('/ayush', ayushRoutes);
+export default router;
